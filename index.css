@@ -1,0 +1,732 @@
+/* Navbar Styles */
+.navbar {
+  background: #0072ff; /* Navbar background color */
+  color: white; /* Text color */
+  padding: 0px 9px; /* Padding for the navbar */
+  position: fixed; /* Fixed position at the top */
+  top: 0; /* Align to the top */
+  width: 100%; /* Full width */
+  z-index: 100; /* Ensure it appears above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  max-width: 1250px; /* Max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 10px 20px; /* Padding for the container */
+  background-color: #0072ff; /* Background color */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.navbar-container a {
+  margin-left: 20px; /* Space between links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.navbar-logo {
+  font-size: 1.2rem; /* Logo font size */
+  font-weight: bold; /* Bold font */
+  color: #ddd; /* Logo color */
+  text-decoration: none; /* Remove underline */
+  margin-right: 10px; /* Space to the right */
+}
+
+.header-logo {
+  height: 40px; /* Logo height */
+  margin-right: 20px; /* Space to the right */
+}
+
+.menu-toggle {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: white; /* Text color */
+  font-size: 1.5rem; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  display: none; /* Hidden by default */
+}
+
+.navbar-links {
+  display: flex; /* Flexbox for links */
+  list-style: none; /* Remove bullet points */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  margin-left: auto; /* Push links to the right */
+}
+
+.navbar-links li {
+  margin-left: 20px; /* Space between list items */
+}
+
+.navbar-links a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Link color */
+  font-size: 1rem; /* Font size */
+  padding: 10px; /* Padding for links */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.navbar-links a:hover {
+  color: #00c6ff; /* Hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show toggle button on mobile */
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically */
+    display: none; /* Hide links by default */
+    position: absolute; /* Position absolutely */
+    background: #0072ff; /* Background color */
+    top: 60px; /* Position below the navbar */
+    right: 10px; /* Align to the right */
+    padding: 10px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners */
+    width: 200px; /* Fixed width */
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .navbar-links li {
+    margin: 10px 0; /* Space between vertical links */
+  }
+}
+/* styles.css or similar */
+
+/* ... (other styles) */
+
+/* styles.css or similar */
+
+/* ... (other styles) */
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 0.5rem; /* Reduced gap between buttons */
+}
+/* Common styles for buttons */
+/* Common styles for buttons (if you still need them for signup and login) */
+.signup-button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  /* Add signup-specific styles here */
+  background-color: green; /* Example */
+  color: white;
+}
+
+
+.icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%; /* Optional: make it circular if it's a square image */
+  margin-left: 0.5rem; /* Space between other nav items */
+  transition: transform 0.2s ease-in-out; /* Optional: add a transition for hover effects */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Optional: scale up on hover */
+}
+
+
+
+.signup-button {
+  border: none;
+  background-color: rgb(46, 219, 60);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+  border-radius: 25px;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.login-button {
+  border: 1px solid #ddd;
+  background-color: transparent;
+  color: #fff; /* Gray color */
+}
+
+.login-button:hover {
+  border-color: #247ddb; /* Blue on hover */
+  color: #bfc3c7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+/* ... (other styles) */
+
+/* Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .signup-button, .login-button {
+    font-size: 0.8rem; /* Even smaller on mobile */
+    padding: 0.3rem 0.6rem; /* Smaller padding on mobile */
+  }
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar-links {
+      display: none; /* Hide links by default */
+      flex-direction: column; /* Stack links vertically */
+      position: absolute;
+      top: 60px; /* Position below the navbar */
+      right: 0;
+      background-color: #fef7e5;
+      width: 100%; /* Full width */
+  }
+
+  .navbar-links.active {
+      display: flex; /* Show links when active */
+  }
+
+  .menu-toggle {
+      display: block; /* Show toggle button */
+  }
+}
+
+/* Icon styles */
+.icon {
+  width: 30px; /* Adjust size */
+  height: 30px; /* Adjust size */
+  margin-left: 0.5rem; /* Space between items */
+}
+/* Home.css */
+
+
+ /* Home Container */
+.home-container {
+  max-width: 1200px; /* Maximum width for the home container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center; /* Center text in the hero section */
+  padding: 50px 20px; /* Padding for top/bottom and left/right */
+  background-color: #0072ff; /* Background color for the hero section */
+  color: white; /* Text color */
+}
+
+.hero-section h1 {
+  font-size: 2.5rem; /* Font size for the main heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.hero-section p {
+  font-size: 1.2rem; /* Font size for the paragraph */
+  margin-bottom: 30px; /* Space below the paragraph */
+}
+
+.cta-button {
+  background-color: #00c6ff; /* Button background color */
+  color: white; /* Button text color */
+  padding: 15px 30px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 1rem; /* Font size for the button */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: #0099cc; /* Darker shade on hover */
+}
+/* Features Section */
+.features-section {
+  margin-top: 50px; /* Space above the features section */
+  text-align: center; /* Center text in the features section */
+}
+
+.features-section h2 {
+  font-size: 2rem; /* Font size for the section heading */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+.features {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space items evenly */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Individual Feature */
+.feature {
+  flex: 1; /* Allow features to grow equally */
+  max-width: 300px; /* Maximum width for each feature */
+  margin: 20px; /* Space around each feature */
+  text-align: center; /* Center text in each feature */
+  background-color: #f9f9f9; /* Light background for features */
+  border-radius: 8px; /* Rounded corners for feature boxes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Padding inside feature boxes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.feature:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.feature img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.feature h3 {
+  font-size: 1.5rem; /* Font size for feature titles */
+  margin: 15px 0; /* Space above and below titles */
+}
+
+.feature p {
+  font-size: 1rem; /* Font size for feature descriptions */
+  color: #555; /* Darker color for text */
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif; /* Set a default font for the body */
+}
+
+
+
+
+/* Headings */
+.subscription-container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styles */
+.subscription-form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+}
+
+
+
+.subscription-form button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.subscription-form button:hover {
+  background-color: #218838;
+}
+
+/* Message Styles */
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+/* Features Section */
+.features-section {
+  margin-top: 50px; /* Space above the features section */
+  text-align: center; /* Center text in the features section */
+}
+
+.features-section h2 {
+  font-size: 2rem; /* Font size for the section heading */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Features List */
+.features {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space items evenly */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Individual Feature */
+.feature {
+  flex: 1; /* Allow features to grow equally */
+  max-width: 300px; /* Maximum width for each feature */
+  margin: 20px; /* Space around each feature */
+  text-align: center; /* Center text in each feature */
+  background-color: #f9f9f9; /* Light background for features */
+  border-radius: 8px; /* Rounded corners for feature boxes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  padding: 20px; /* Padding inside feature boxes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.feature:hover {
+  transform: translateY(-5px); /* Lift effect on hover (moves the card up) */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover for a more pronounced effect */
+}
+
+/* Feature Card Image */
+.feature img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Feature Card Title */
+.feature h3 {
+  font-size: 1.5rem; /* Font size for feature titles */
+  margin: 15px 0; /* Space above and below titles */
+}
+
+/* Feature Card Description */
+.feature p {
+  font-size: 1rem; /* Font size for feature descriptions */
+  color: #555; /* Darker color for text */
+}
+
+/* Hover Effect */
+.feature:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+/* Programmes Container */
+.programmes-container {
+  max-width: 1200px; /* Maximum width for the programmes container */
+  margin: 0 auto; /* Center the container */
+  padding: 40px 20px; /* Padding around the container */
+  text-align: center; /* Center text in the container */
+  background-color: #f4f4f4; /* Light background color for the section */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Section Heading */
+.programmes-container h1 {
+  font-size: 2.5rem; /* Font size for the main heading */
+  margin-bottom: 30px; /* Space below the heading */
+  color: #333; /* Dark color for the heading */
+}
+
+/* Programme List */
+.programme-list {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-around; /* Space items evenly */
+}
+
+/* Individual Programme Card */
+.programme-card {
+  background-color: white; /* White background for cards */
+  border-radius: 8px; /* Rounded corners for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  margin: 20px; /* Space around each card */
+  padding: 20px; /* Padding inside cards */
+  width: 300px; /* Fixed width for cards */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.programme-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Programme Card Image */
+.programme-card img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Programme Card Title */
+.programme-card h2 {
+  font-size: 1.5rem; /* Font size for programme titles */
+  margin: 15px 0; /* Space above and below titles */
+  color: #0072ff; /* Color for titles */
+}
+
+/* Programme Card Description */
+.programme-card p {
+  font-size: 1rem; /* Font size for descriptions */
+  color: #555; /* Darker color for text */
+  margin: 10px 0; /* Space above and below descriptions */
+}
+
+.programme-card .price { /* More specific: price inside programme-card */
+  font-weight: bold;
+  color: #28a745; /* Green */
+  margin: 10px 0;
+}
+
+.programme-card .rating { /* More specific: rating inside programme-card */
+  color: #f7d037; /* Gold */
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Hover Effect */
+.feature:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+/* Register.css */
+
+.register-container {
+  font-family: 'Poppins', sans-serif; /* Modern font (import it) */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+  background-color: #f4f4f4; /* Light background */
+  padding: 20px;
+}
+
+.register-container h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333; /* Darker heading color */
+}
+/* In your Register.css */
+
+
+.logo-container {
+  
+  background-color: rgba(255, 255, 255, 0.7); /* Lighter white background (adjust opacity) */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  margin-bottom: 20px; /* Add margin below the logo container*/
+  display: flex; /* Ensure the image stays beside the text */
+  align-items: center; /* Vertically center the image and text */
+}
+
+.register-logo { /* Styles for the image itself */
+  max-height: 60px; /* Adjust as needed */
+  margin-right: 10px; /* Space between logo and text if you have text next to the logo */
+}
+
+/* If you have text next to the logo in the <a> tag */
+.logo-container a {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit color from parent */
+}
+
+form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust form width */
+}
+
+label {
+  display: block; /* Labels on separate lines */
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555; /* Slightly lighter label color */
+}
+
+input,
+select {
+  width: calc(100% - 18px); /* Account for padding and border */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width */
+  font-size: 1rem;
+  transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff; /* Highlight on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Subtle glow on focus */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make button full width */
+}
+
+button:hover {
+  background-color: #0bc51b;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #dc3545; /* Red error message */
+  margin-top: 10px;
+}
+
+.success {
+  color: #28a745; /* Green success message */
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  form {
+      width: 90%; /* Make form almost full width on smaller screens */
+      padding: 20px;
+  }
+
+  .register-container h2 {
+      font-size: 2rem;
+  }
+
+  label {
+      font-size: 0.9rem;
+  }
+
+  input,
+  select {
+      font-size: 0.9rem;
+  }
+
+  button {
+      font-size: 1rem;
+  }
+}
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Dark gray background for the footer */
+  color: #f9f9f9; /* Light gray text color for contrast */
+  text-align: center; /* Center text in the footer */
+  padding: 20px; /* Padding around the footer */
+  position: relative; /* Positioning context for any absolute elements */
+  bottom: 0; /* Align to the bottom of the page */
+  width: 100%; /* Full width */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+/* Footer Content */
+.footer-content {
+  font-size: 1rem; /* Font size for footer text */
+  margin: 0; /* Remove default margin */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+      font-size: 0.9rem; /* Slightly smaller font size on smaller screens */
+  }
+}
+.contact-container {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Center the container */
+  max-width: 600px;  /* Or adjust as needed */
+  /* Remove text-align: center; from here */
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch form elements to container width */
+}
+
+.contact-container label {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-container button {
+  background-color: #0072ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center; /* Center the button */
+  width: auto; /* Adjust width as needed */
+}
+
+.contact-container button:hover {
+  background-color: #005bb5;
+}
+
+/* ... (Existing Error/Success Styles) ... */
+
+
+/* Footer Styles (Modified for spacing) */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px; /* Increased margin for spacing */
+}
